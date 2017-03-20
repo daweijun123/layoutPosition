@@ -5,26 +5,43 @@
 	<title>定位和居中</title>
 	<style type="text/css">
 		.main{
-			position: relative;
-		}
-		.position{
 			background-color: #ccc;
 			height: 200px;
 			width: 400px;
-			margin: 0 auto;
-			position: relative;
-			top: 50px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin:-100px 0 0 -200px;
+			
 		}
-		
+		.position{
+			background-color: #fc0;
+			height: 50px;
+			width: 50px;
+			position: absolute;
+			
+			
+		}
+		.position1{
+			
+			-webkit-border-radius: 0 0 50px 0;
+
+		}
+		.position2{
+			bottom: 0;
+			right: 0;
+			-webkit-border-radius: 50px 0 0 0 ;
+
+
+
+		}
 
 	</style>
 </head>
 <body>
 	<div class="main">
-		<div class="position">
-			
-		</div>
-		
+		<div class=" position position1 "></div>
+		<div class="position position2 "></div>
 	</div>
 </body>
 </html>
